@@ -4,11 +4,10 @@
       <h3>Detalle del Producto:</h3>
       {{ product.title }}
       <div class="logo-contenedor">
-        <img
-          [src]="product.image"
-          alt="{{ product.title }}"
-          class="product-image"
-        />
+        <img loading="lazy" 
+            [src]="product.image"          
+            alt="{{ product.title }}"
+            class="product-image" />
       </div>
       <p><strong>Descripción:</strong> {{ product.description }}</p>
       <p><strong>Categoría:</strong> {{ product.category }}</p>
