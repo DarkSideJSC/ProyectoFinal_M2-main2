@@ -1,0 +1,23 @@
+<mat-card>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <mat-card-title>Iniciar Sesión</mat-card-title>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Nombre de usuario o Correo Electrónico</mat-label>
+      <input matInput formControlName="username" type="text" placeholder="Introduce tu nombre de usuario">
+      <mat-error >
+        Este campo es obligatorio
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Contraseña</mat-label>
+      <input matInput formControlName="password" type="password" placeholder="Introduce tu contraseña">
+      <mat-error >
+        Este campo es obligatorio
+      </mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Entrar</button>
+  </form>
+</mat-card>
