@@ -1,8 +1,12 @@
 <main class="main">
   <div class="content">
+    <nav>
+      <a routerLink="/productos" routerLinkActive="active">Productos</a> |
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+    </nav>  
       <h1>{{ title }}</h1>
       <hr>
-      
-      <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
+      <hr>
   </div>
 </main>

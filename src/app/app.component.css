@@ -9,3 +9,17 @@
     width: 250px; /* Ajusta el ancho del buscador */
     font-size: 14px; /* Tamaño de texto más pequeño */
   }
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  a.active {
+    font-weight: bold;
+    color: #1976d2;
+  }
